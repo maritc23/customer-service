@@ -1,0 +1,14 @@
+dbport: '27017'
+dbname: CustomerDB2
+spring:
+  application:
+    name: customer-service
+  cloud:
+    config:
+      uri: localhost:8888
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR

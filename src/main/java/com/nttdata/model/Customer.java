@@ -19,6 +19,7 @@ public class Customer {
     @Id
     int id;
     String name;
+    String companyName;
     String lastname;
     String documentType;
     String documentNumber;
