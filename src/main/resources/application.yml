@@ -1,3 +1,6 @@
+server: 
+  port: 8081
+  
 dbport: '27017'
 dbname: CustomerDB2
 spring:
@@ -12,3 +15,10 @@ logging:
       springframework:
         boot:
           autoconfigure: ERROR
+ 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
